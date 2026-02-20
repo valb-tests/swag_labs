@@ -1,7 +1,4 @@
-  *** Settings ***
-  Documentation     Test simple Hello World
-
-  *** Test Cases ***
-  Mon Premier Test
-  Log    Hello World !
-  Should Be Equal    Hello    Hello
+*** Test Cases ***
+Example Test
+    Log    Hello World!
+    Should Be Equal    1    1
