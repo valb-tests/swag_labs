@@ -17,8 +17,8 @@ https://www.saucedemo.com/
 - Automatiser les scénarios :
   - Login et logout utilisateur
   - Ajout et suppression du panier
-  - Checkout
-- Intégrer les résultats des tests dans Jira avec Xray
+  - Saisie des informations clients
+  - Validation de commande
 
 ---
 
@@ -27,5 +27,5 @@ https://www.saucedemo.com/
 ### Cloner le projet
 
 ```bash
-https://github.com/valb-code/swag_labs.git
+git clone https://github.com/valb-tests/swag_labs.git
 cd swag_labs
