@@ -32,3 +32,7 @@ cd swag_labs
 ```
 
 ### Lancer les tests
+Lancer cette commande depuis le répertoire swag_labs
+```bash
+robot .
+```
