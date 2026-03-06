@@ -29,3 +29,6 @@ https://www.saucedemo.com/
 ```bash
 git clone https://github.com/valb-tests/swag_labs.git
 cd swag_labs
+```
+
+### Lancer les tests

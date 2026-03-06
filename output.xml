@@ -1,40 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.12.3 on linux)" generated="2026-02-24T15:26:21.592608" rpa="false" schemaversion="5">
-<suite id="s1" name="Tests" source="/home/administrateur/PhpstormProjects/swag_labs/tests">
-<suite id="s1-s1" name="Example" source="/home/administrateur/PhpstormProjects/swag_labs/tests/example.robot">
-<test id="s1-s1-t1" name="Example Test" line="2">
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-02-24T15:26:21.648101" level="INFO">Hello World!</msg>
-<arg>Hello World!</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-02-24T15:26:21.647635" elapsed="0.000572"/>
+<robot generator="Robot 7.4.1 (Python 3.12.3 on linux)" generated="2026-03-06T12:37:48.397518" rpa="false" schemaversion="5">
+<suite id="s1" name="Swag Labs" source="/home/administrateur/PhpstormProjects/swag_labs">
+<suite id="s1-s1" name="Tests" source="/home/administrateur/PhpstormProjects/swag_labs/tests">
+<suite id="s1-s1-s1" name="Login" source="/home/administrateur/PhpstormProjects/swag_labs/tests/login">
+<suite id="s1-s1-s1-s1" name="Login Blocked User" source="/home/administrateur/PhpstormProjects/swag_labs/tests/login/login_blocked_user">
+<suite id="s1-s1-s1-s1-s1" name="Login Blocked User Tests" source="/home/administrateur/PhpstormProjects/swag_labs/tests/login/login_blocked_user/login_blocked_user_tests.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="SWAG-27 Login compte bloqué" line="10">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-06T12:37:48.676227" level="INFO">Fills the text 'blocked_user' in the given field.</msg>
+<msg time="2026-03-06T12:37:48.686694" level="INFO">Starting Browser process /home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js using at 127.0.0.1:42067</msg>
+<msg time="2026-03-06T12:37:49.780497" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2026-03-06T12:37:49.780717" level="INFO">See also file:///home/administrateur/PhpstormProjects/swag_labs/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-06T12:37:49.781222" level="FAIL">Error: Could not find active page</msg>
+<arg>id=user-name</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="FAIL" start="2026-03-06T12:37:48.674987" elapsed="1.112119">Error: Could not find active page</status>
 </kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<arg>1</arg>
-<arg>1</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2026-02-24T15:26:21.648679" elapsed="0.000567"/>
+<kw name="Fill Text" owner="Browser">
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-06T12:37:49.787612" elapsed="0.000175"/>
 </kw>
-<status status="PASS" start="2026-02-24T15:26:21.646660" elapsed="0.002911"/>
+<kw name="Click" owner="Browser">
+<arg>id=login-button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-06T12:37:49.788020" elapsed="0.000092"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>css=[data-test="error"]</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2026-03-06T12:37:49.788303" elapsed="0.000080"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-03-06T12:37:49.788578" elapsed="0.000083"/>
+</kw>
+<status status="FAIL" start="2026-03-06T12:37:48.673219" elapsed="1.115763">Error: Could not find active page</status>
 </test>
-<status status="PASS" start="2026-02-24T15:26:21.645261" elapsed="0.004982"/>
+<status status="FAIL" start="2026-03-06T12:37:48.458592" elapsed="1.343844"/>
 </suite>
-<suite id="s1-s2" name="Login" source="/home/administrateur/PhpstormProjects/swag_labs/tests/login">
-<suite id="s1-s2-s1" name="Login Tests" source="/home/administrateur/PhpstormProjects/swag_labs/tests/login/login_tests.robot">
-<test id="s1-s2-s1-t1" name="Login User Successfully" line="10">
+<status status="FAIL" start="2026-03-06T12:37:48.455842" elapsed="1.360264"/>
+</suite>
+<suite id="s1-s1-s1-s2" name="Login Standard User" source="/home/administrateur/PhpstormProjects/swag_labs/tests/login/login_standard_user">
+<suite id="s1-s1-s1-s2-s1" name="Login Standard User Tests" source="/home/administrateur/PhpstormProjects/swag_labs/tests/login/login_standard_user/login_standard_user_tests.robot">
+<test id="s1-s1-s1-s2-s1-t1" name="SWAG-25 Login identifiants valides" line="18">
+<kw name="Open Login Page">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-02-24T15:26:21.901260" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/administrateur/PhpstormProjects/swag_labs/browser/traces/temp/5335c194-8a33-4665-8339-8403f4d802af"}</msg>
-<msg time="2026-02-24T15:26:22.001609" level="INFO">Starting Browser process /home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js using at 127.0.0.1:57897</msg>
-<msg time="2026-02-24T15:26:24.113034" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/administrateur/PhpstormProjects/swag_labs/browser/traces/temp/5335c194-8a33-4665-8339-8403f4d802af"}</msg>
+<msg time="2026-03-06T12:37:49.840956" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/administrateur/PhpstormProjects/swag_labs/browser/traces/temp/6eee59bb-83f7-4b1d-9afb-918f5eba1355"}</msg>
+<msg time="2026-03-06T12:37:50.321468" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/administrateur/PhpstormProjects/swag_labs/browser/traces/temp/6eee59bb-83f7-4b1d-9afb-918f5eba1355"}</msg>
 <arg>chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-02-24T15:26:21.900099" elapsed="2.213229"/>
+<status status="PASS" start="2026-03-06T12:37:49.839517" elapsed="0.482524"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-02-24T15:26:24.115657" level="INFO">{
+<msg time="2026-03-06T12:37:50.325874" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -48,83 +85,327 @@
     "height": 720
   }
 }</msg>
-<msg time="2026-02-24T15:26:24.147951" level="INFO">Successfully created context. </msg>
-<msg time="2026-02-24T15:26:24.148055" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-03-06T12:37:50.356720" level="INFO">Successfully created context. </msg>
+<msg time="2026-03-06T12:37:50.356849" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-02-24T15:26:24.113739" elapsed="0.034434"/>
+<status status="PASS" start="2026-03-06T12:37:50.322538" elapsed="0.034450"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-02-24T15:26:25.332843" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com/</msg>
+<msg time="2026-03-06T12:37:51.303298" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com/</msg>
 <arg>${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-02-24T15:26:24.148542" elapsed="1.184593"/>
+<status status="PASS" start="2026-03-06T12:37:50.357247" elapsed="0.946463"/>
+</kw>
+<status status="PASS" start="2026-03-06T12:37:49.838696" elapsed="1.465280"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-02-24T15:26:25.334679" level="INFO">Fills the text 'standard_user' in the given field.</msg>
+<msg time="2026-03-06T12:37:51.305451" level="INFO">Fills the text 'standard_user' in the given field.</msg>
 <arg>id=user-name</arg>
 <arg>${USERNAME}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-02-24T15:26:25.333509" elapsed="0.087332"/>
+<status status="PASS" start="2026-03-06T12:37:51.304374" elapsed="0.079746"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-02-24T15:26:25.421930" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
+<msg time="2026-03-06T12:37:51.385266" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${PASSWORD}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-02-24T15:26:25.421184" elapsed="0.024877"/>
+<status status="PASS" start="2026-03-06T12:37:51.384458" elapsed="0.024224"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-02-24T15:26:25.447388" level="INFO">Clicks the element 'id=login-button'.</msg>
+<msg time="2026-03-06T12:37:51.409801" level="INFO">Clicks the element 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-02-24T15:26:25.446529" elapsed="0.541379"/>
+<status status="PASS" start="2026-03-06T12:37:51.409014" elapsed="0.161395"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-02-24T15:26:26.035903" level="INFO">Waited for Element with selector text="Swag Labs" at state visible</msg>
+<msg time="2026-03-06T12:37:51.589410" level="INFO">Waited for Element with selector text="Swag Labs" at state visible</msg>
 <arg>text="Swag Labs"</arg>
 <arg>visible</arg>
 <arg>timeout=5s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-02-24T15:26:25.988255" elapsed="0.048076"/>
+<status status="PASS" start="2026-03-06T12:37:51.570823" elapsed="0.018909"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-02-24T15:26:26.480476" level="INFO">Closed browser</msg>
+<msg time="2026-03-06T12:37:52.506149" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-02-24T15:26:26.036927" elapsed="0.443819"/>
+<status status="PASS" start="2026-03-06T12:37:51.590092" elapsed="0.916277"/>
 </kw>
-<status status="PASS" start="2026-02-24T15:26:21.899149" elapsed="4.581901"/>
+<status status="PASS" start="2026-03-06T12:37:49.831335" elapsed="2.675353"/>
 </test>
-<status status="PASS" start="2026-02-24T15:26:21.652353" elapsed="4.839897"/>
+<test id="s1-s1-s1-s2-s1-t2" name="SWAG-26 Login nom d'utilisateur invalide" line="29">
+<kw name="Open Login Page">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-06T12:37:52.522645" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/administrateur/PhpstormProjects/swag_labs/browser/traces/temp/a16615de-9eab-438e-8c1d-56f24fca9d74"}</msg>
+<msg time="2026-03-06T12:37:52.944042" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/administrateur/PhpstormProjects/swag_labs/browser/traces/temp/a16615de-9eab-438e-8c1d-56f24fca9d74"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-06T12:37:52.521292" elapsed="0.423122"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-03-06T12:37:52.947900" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-03-06T12:37:52.967312" level="INFO">Successfully created context. </msg>
+<msg time="2026-03-06T12:37:52.967468" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-03-06T12:37:52.944871" elapsed="0.022788"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-06T12:37:53.862294" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com/</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-06T12:37:52.967979" elapsed="0.894693"/>
+</kw>
+<status status="PASS" start="2026-03-06T12:37:52.520470" elapsed="1.342415"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-06T12:37:53.863994" level="INFO">Fills the text 'wrong_username' in the given field.</msg>
+<arg>id=user-name</arg>
+<arg>${WRONGUSERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-06T12:37:53.863147" elapsed="0.057067"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-06T12:37:53.921415" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-06T12:37:53.920595" elapsed="0.023343"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-06T12:37:53.945123" level="INFO">Clicks the element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-06T12:37:53.944306" elapsed="0.122849"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-06T12:37:54.085662" level="INFO">Waited for Element with selector css=[data-test="error"] at state visible</msg>
+<arg>css=[data-test="error"]</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-06T12:37:54.067758" elapsed="0.018214"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2026-03-06T12:37:54.098538" level="INFO">${productsText} = 0</msg>
+<var>${productsText}</var>
+<arg>text="Products"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2026-03-06T12:37:54.086417" elapsed="0.012244"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-03-06T12:37:54.099891" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${productsText}</arg>
+<arg>0</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-03-06T12:37:54.099074" elapsed="0.000977"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2026-03-06T12:37:54.110862" level="INFO">${addToCart} = 0</msg>
+<var>${addToCart}</var>
+<arg>css=[data-test="add-to-cart-sauce-labs-backpack"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2026-03-06T12:37:54.100468" elapsed="0.010479"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-03-06T12:37:54.112266" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${addToCart}</arg>
+<arg>0</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-03-06T12:37:54.111365" elapsed="0.001064"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-03-06T12:37:54.647915" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-06T12:37:54.112878" elapsed="0.535201"/>
+</kw>
+<status status="PASS" start="2026-03-06T12:37:52.515586" elapsed="2.132722"/>
+</test>
+<test id="s1-s1-s1-s2-s1-t3" name="SWAG-30 Login mot de passe invalide" line="46">
+<kw name="Open Login Page">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-06T12:37:54.657322" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/administrateur/PhpstormProjects/swag_labs/browser/traces/temp/416a4f9f-c7a2-4258-9b23-5692b8f1a62c"}</msg>
+<msg time="2026-03-06T12:37:54.938533" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/administrateur/PhpstormProjects/swag_labs/browser/traces/temp/416a4f9f-c7a2-4258-9b23-5692b8f1a62c"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-06T12:37:54.656695" elapsed="0.282282"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-03-06T12:37:54.941078" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-03-06T12:37:54.956071" level="INFO">Successfully created context. </msg>
+<msg time="2026-03-06T12:37:54.956179" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-03-06T12:37:54.939333" elapsed="0.016938"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-06T12:37:55.615599" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com/</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-06T12:37:54.956543" elapsed="0.659320"/>
+</kw>
+<status status="PASS" start="2026-03-06T12:37:54.656295" elapsed="0.959690"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-06T12:37:55.616989" level="INFO">Fills the text 'standard_user' in the given field.</msg>
+<arg>id=user-name</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-06T12:37:55.616208" elapsed="0.037318"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-06T12:37:55.654436" level="INFO">Fills the text 'wrong_password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${WRONGPASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-06T12:37:55.653813" elapsed="0.014841"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-06T12:37:55.669710" level="INFO">Clicks the element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-06T12:37:55.669009" elapsed="0.150343"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-06T12:37:55.827092" level="INFO">Waited for Element with selector css=[data-test="error"] at state visible</msg>
+<arg>css=[data-test="error"]</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-06T12:37:55.819746" elapsed="0.007510"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2026-03-06T12:37:55.832576" level="INFO">${addToCart} = 0</msg>
+<var>${addToCart}</var>
+<arg>css=[data-test="shopping-cart-link"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2026-03-06T12:37:55.827523" elapsed="0.005103"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-03-06T12:37:55.833215" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${addToCart}</arg>
+<arg>0</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-03-06T12:37:55.832841" elapsed="0.000428"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-03-06T12:37:56.030843" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-06T12:37:55.833371" elapsed="0.197695"/>
+</kw>
+<status status="PASS" start="2026-03-06T12:37:54.653480" elapsed="1.377864"/>
+</test>
+<status status="PASS" start="2026-03-06T12:37:49.820187" elapsed="6.215462"/>
 </suite>
-<status status="PASS" start="2026-02-24T15:26:21.650870" elapsed="4.849897"/>
+<status status="PASS" start="2026-03-06T12:37:49.816989" elapsed="6.223440"/>
 </suite>
-<status status="PASS" start="2026-02-24T15:26:21.594007" elapsed="4.907410"/>
+<status status="FAIL" start="2026-03-06T12:37:48.453278" elapsed="7.587569"/>
+</suite>
+<status status="FAIL" start="2026-03-06T12:37:48.451011" elapsed="7.590166"/>
+</suite>
+<status status="FAIL" start="2026-03-06T12:37:48.401731" elapsed="7.639775"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="2" fail="0" skip="0">Tests</stat>
-<stat name="Example" id="s1-s1" pass="1" fail="0" skip="0">Tests.Example</stat>
-<stat name="Login" id="s1-s2" pass="1" fail="0" skip="0">Tests.Login</stat>
-<stat name="Login Tests" id="s1-s2-s1" pass="1" fail="0" skip="0">Tests.Login.Login Tests</stat>
+<stat name="Swag Labs" id="s1" pass="3" fail="1" skip="0">Swag Labs</stat>
+<stat name="Tests" id="s1-s1" pass="3" fail="1" skip="0">Swag Labs.Tests</stat>
+<stat name="Login" id="s1-s1-s1" pass="3" fail="1" skip="0">Swag Labs.Tests.Login</stat>
+<stat name="Login Blocked User" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Swag Labs.Tests.Login.Login Blocked User</stat>
+<stat name="Login Blocked User Tests" id="s1-s1-s1-s1-s1" pass="0" fail="1" skip="0">Swag Labs.Tests.Login.Login Blocked User.Login Blocked User Tests</stat>
+<stat name="Login Standard User" id="s1-s1-s1-s2" pass="3" fail="0" skip="0">Swag Labs.Tests.Login.Login Standard User</stat>
+<stat name="Login Standard User Tests" id="s1-s1-s1-s2-s1" pass="3" fail="0" skip="0">Swag Labs.Tests.Login.Login Standard User.Login Standard User Tests</stat>
 </suite>
 </statistics>
 <errors>

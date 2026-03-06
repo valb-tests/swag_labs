@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.3 on linux)" generated="2026-03-06T13:05:58.094235" rpa="false" schemaversion="5">
+<suite id="s1" name="Logout Standard User" source="/home/administrateur/PhpstormProjects/swag_labs/tests/logout/logout_standard_user.robot">
+<test id="s1-t1" name="SWAG-28 - Déconnexion réussie" line="22">
+<kw name="Connect user">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-06T13:05:58.348298" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/administrateur/PhpstormProjects/swag_labs/tests/logout/browser/traces/temp/e179fa5a-4b30-4fa1-aab4-16d5303025f5"}</msg>
+<msg time="2026-03-06T13:05:58.358278" level="INFO">Starting Browser process /home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js using at 127.0.0.1:34179</msg>
+<msg time="2026-03-06T13:05:59.873026" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/administrateur/PhpstormProjects/swag_labs/tests/logout/browser/traces/temp/e179fa5a-4b30-4fa1-aab4-16d5303025f5"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-06T13:05:58.347193" elapsed="1.526273"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-03-06T13:05:59.876677" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-03-06T13:05:59.901521" level="INFO">Successfully created context. </msg>
+<msg time="2026-03-06T13:05:59.901679" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-03-06T13:05:59.873979" elapsed="0.027878"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-06T13:06:00.988958" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com/</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-06T13:05:59.902214" elapsed="1.087103"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-06T13:06:00.990550" level="INFO">Fills the text 'standard_user' in the given field.</msg>
+<arg>id=user-name</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-06T13:06:00.989645" elapsed="0.075254"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-06T13:06:01.066021" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-06T13:06:01.065203" elapsed="0.021988"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-06T13:06:01.088354" level="INFO">Clicks the element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-06T13:06:01.087546" elapsed="0.505167"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-06T13:06:01.612949" level="INFO">Waited for Element with selector text="Swag Labs" at state visible</msg>
+<arg>text="Swag Labs"</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-06T13:06:01.593125" elapsed="0.020060"/>
+</kw>
+<status status="PASS" start="2026-03-06T13:05:58.345860" elapsed="3.267545"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-06T13:06:01.614466" level="INFO">Clicks the element 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-06T13:06:01.613718" elapsed="0.077206"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-06T13:06:01.692167" level="INFO">Clicks the element 'css=[data-test="logout-sidebar-link"]'.</msg>
+<arg>css=[data-test="logout-sidebar-link"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-06T13:06:01.691316" elapsed="0.677556"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-03-06T13:06:02.741770" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-06T13:06:02.369205" elapsed="0.372771"/>
+</kw>
+<status status="PASS" start="2026-03-06T13:05:58.344639" elapsed="4.397617"/>
+</test>
+<status status="PASS" start="2026-03-06T13:05:58.095832" elapsed="4.678439"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Logout Standard User" id="s1" pass="1" fail="0" skip="0">Logout Standard User</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
