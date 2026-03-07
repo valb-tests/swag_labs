@@ -1,16 +1,16 @@
 *** Settings ***
 Library    Browser
+Resource    ../../../keywords.resource
 
 *** Variables ***
-${URL}           https://www.saucedemo.com/
-${USERNAME}      blocked_user
+${USERNAME}      locked_out_user
 ${PASSWORD}      secret_sauce
 
 *** Test Cases ***
-SWAG-27 Login compte bloqué
-    New Browser    chromium    headless=False
-    New Context
-    New Page    ${URL}
+Login blocked user
+    [Tags]  SWAG-27
+    Log     Exécution SWAG-27 Login compte bloqué
+    Open Login Page
 
     Fill Text    id=user-name    ${USERNAME}
     Fill Text    id=password    ${PASSWORD}

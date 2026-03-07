@@ -1,21 +1,15 @@
 *** Settings ***
 Library    Browser
+Resource    ../../../keywords.resource
 
 *** Variables ***
-${URL}           https://www.saucedemo.com/
-${USERNAME}      standard_user
-${PASSWORD}      secret_sauce
 ${WRONGUSERNAME}    wrong_username
 ${WRONGPASSWORD}    wrong_password
 
-*** Keywords ***
-Open Login Page
-    New Browser    chromium    headless=False
-    New Context
-    New Page    ${URL}
-
 *** Test Cases ***
-SWAG-25 Login identifiants valides
+Login standard user successfully
+    [Tags]  SWAG-25
+    Log     Execution SWAG-25 Login identifiants valides
     Open Login Page
 
     Fill Text    id=user-name    ${USERNAME}
@@ -26,7 +20,9 @@ SWAG-25 Login identifiants valides
 
     Close Browser
 
-SWAG-26 Login nom d'utilisateur invalide
+Login standard user wrong username
+    [Tags]  SWAG-26
+    Log     Execution SWAG-26 Login nom d'utilisateur invalide
     Open Login Page
 
     Fill Text    id=user-name    ${WRONGUSERNAME}
@@ -43,7 +39,9 @@ SWAG-26 Login nom d'utilisateur invalide
 
     Close Browser
 
-SWAG-30 Login mot de passe invalide
+Login standard user wrong password
+    [Tags]  SWAG-30
+    Log     Exécution SWAG-30 Login mot de passe invalide
     Open Login Page
 
     Fill Text    id=user-name    ${USERNAME}
