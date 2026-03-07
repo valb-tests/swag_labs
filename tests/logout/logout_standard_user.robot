@@ -13,7 +13,7 @@ Connect user
     Wait For Elements State    text="Swag Labs"    visible    timeout=5s
 
 *** Test cases ***
-Disconnection
+Déconnexion
     [Tags]  SWAG-28
     Log     Exécution SWAG-28 Déconnexion
     Connect user

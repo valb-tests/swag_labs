@@ -1,0 +1,169 @@
+{"level":30,"time":"2026-03-07T15:25:39.091Z","pid":884950,"hostname":"linuxshop","msg":"Listening on 127.0.0.1:44763"}
+{"level":30,"time":"2026-03-07T15:25:39.123Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-07T15:25:39.383Z","pid":884950,"hostname":"linuxshop","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-07T15:25:39.383Z","pid":884950,"hostname":"linuxshop","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-07T15:25:39.383Z","pid":884950,"hostname":"linuxshop","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-07T15:25:39.390Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-03-07T15:25:39.390Z","pid":884950,"hostname":"linuxshop","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":30,"time":"2026-03-07T15:25:39.391Z","pid":884950,"hostname":"linuxshop","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@97e649d5fd73183e0deb0b1bfb285b47\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=4d8ccdb2-8abd-4e03-ab01-64326eb7c937\"}"}
+{"level":30,"time":"2026-03-07T15:25:39.391Z","pid":884950,"hostname":"linuxshop","msg":"Trace file: "}
+{"level":30,"time":"2026-03-07T15:25:39.401Z","pid":884950,"hostname":"linuxshop","msg":"Setting default timeout for context context=9e9fb9e4-7ebc-4c4b-be37-1a9410ba1e05 to 10000"}
+{"level":30,"time":"2026-03-07T15:25:39.401Z","pid":884950,"hostname":"linuxshop","msg":"Changed active context: context=9e9fb9e4-7ebc-4c4b-be37-1a9410ba1e05"}
+{"level":30,"time":"2026-03-07T15:25:39.401Z","pid":884950,"hostname":"linuxshop","msg":"End of node method newContext"}
+{"level":30,"time":"2026-03-07T15:25:39.405Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-07T15:25:39.405Z","pid":884950,"hostname":"linuxshop","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@97e649d5fd73183e0deb0b1bfb285b47\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=9e9fb9e4-7ebc-4c4b-be37-1a9410ba1e05\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@5335a9899dfa98a985c3f941e69f5405\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"id\":\"browser=4d8ccdb2-8abd-4e03-ab01-64326eb7c937\"}"}
+{"level":30,"time":"2026-03-07T15:25:39.565Z","pid":884950,"hostname":"linuxshop","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-07T15:25:39.566Z","pid":884950,"hostname":"linuxshop","msg":"Changed active page"}
+{"level":30,"time":"2026-03-07T15:25:39.949Z","pid":884950,"hostname":"linuxshop","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-07T15:25:39.956Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-07T15:25:39.956Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is enabled, find Locator with id=user-name in page."}
+{"level":30,"time":"2026-03-07T15:25:40.014Z","pid":884950,"hostname":"linuxshop","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-07T15:25:40.020Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-07T15:25:40.020Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2026-03-07T15:25:40.037Z","pid":884950,"hostname":"linuxshop","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-07T15:25:40.043Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-07T15:25:40.043Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is enabled, find Locator with id=login-button in page."}
+{"level":30,"time":"2026-03-07T15:25:40.410Z","pid":884950,"hostname":"linuxshop","msg":"End of node method click"}
+{"level":30,"time":"2026-03-07T15:25:40.418Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-07T15:25:40.419Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is enabled, find Locator with text=\"Swag Labs\" in page."}
+{"level":30,"time":"2026-03-07T15:25:40.431Z","pid":884950,"hostname":"linuxshop","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-07T15:25:40.439Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-03-07T15:25:40.451Z","pid":884950,"hostname":"linuxshop","msg":"Removed page=706ddf3f-8fb6-4416-a786-c6ead4eef931 from context=9e9fb9e4-7ebc-4c4b-be37-1a9410ba1e05 page stack"}
+{"level":30,"time":"2026-03-07T15:25:40.564Z","pid":884950,"hostname":"linuxshop","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13622:59)
+    at PlaywrightServer.setTimeout (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13873:57)
+    at Object.onReceiveHalfClose (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-03-07T15:25:40.590Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-07T15:25:40.590Z","pid":884950,"hostname":"linuxshop","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-07T15:25:40.593Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-07T15:25:40.593Z","pid":884950,"hostname":"linuxshop","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-07T15:25:40.597Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-07T15:25:40.875Z","pid":884950,"hostname":"linuxshop","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-07T15:25:40.875Z","pid":884950,"hostname":"linuxshop","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-07T15:25:40.875Z","pid":884950,"hostname":"linuxshop","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-07T15:25:40.884Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-03-07T15:25:40.884Z","pid":884950,"hostname":"linuxshop","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":30,"time":"2026-03-07T15:25:40.884Z","pid":884950,"hostname":"linuxshop","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@d82e834a0ed40955c2b29c01633450d1\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=29232dff-b486-48fb-9c16-21136333c36c\"}"}
+{"level":30,"time":"2026-03-07T15:25:40.884Z","pid":884950,"hostname":"linuxshop","msg":"Trace file: "}
+{"level":30,"time":"2026-03-07T15:25:40.896Z","pid":884950,"hostname":"linuxshop","msg":"Setting default timeout for context context=253583f5-ee6f-4a16-88c5-0e146b022297 to 10000"}
+{"level":30,"time":"2026-03-07T15:25:40.896Z","pid":884950,"hostname":"linuxshop","msg":"Changed active context: context=253583f5-ee6f-4a16-88c5-0e146b022297"}
+{"level":30,"time":"2026-03-07T15:25:40.896Z","pid":884950,"hostname":"linuxshop","msg":"End of node method newContext"}
+{"level":30,"time":"2026-03-07T15:25:40.900Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-07T15:25:40.900Z","pid":884950,"hostname":"linuxshop","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@d82e834a0ed40955c2b29c01633450d1\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=253583f5-ee6f-4a16-88c5-0e146b022297\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@d5dfdae655b308841928e223ce5f8efa\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"id\":\"browser=29232dff-b486-48fb-9c16-21136333c36c\"}"}
+{"level":30,"time":"2026-03-07T15:25:41.073Z","pid":884950,"hostname":"linuxshop","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-07T15:25:41.073Z","pid":884950,"hostname":"linuxshop","msg":"Changed active page"}
+{"level":30,"time":"2026-03-07T15:25:41.512Z","pid":884950,"hostname":"linuxshop","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-07T15:25:41.517Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-07T15:25:41.517Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is enabled, find Locator with id=user-name in page."}
+{"level":30,"time":"2026-03-07T15:25:41.552Z","pid":884950,"hostname":"linuxshop","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-07T15:25:41.556Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-07T15:25:41.556Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2026-03-07T15:25:41.568Z","pid":884950,"hostname":"linuxshop","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-07T15:25:41.573Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-07T15:25:41.573Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is enabled, find Locator with id=login-button in page."}
+{"level":30,"time":"2026-03-07T15:25:41.919Z","pid":884950,"hostname":"linuxshop","msg":"End of node method click"}
+{"level":30,"time":"2026-03-07T15:25:41.925Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-07T15:25:41.925Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is enabled, find Locator with css=[data-test=\"error\"] in page."}
+{"level":30,"time":"2026-03-07T15:25:41.933Z","pid":884950,"hostname":"linuxshop","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-07T15:25:41.937Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method getElementCount"}
+{"level":30,"time":"2026-03-07T15:25:41.937Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is disabled, return Locator: text=\"Products\" in page."}
+{"level":30,"time":"2026-03-07T15:25:41.942Z","pid":884950,"hostname":"linuxshop","msg":"End of node method getElementCount"}
+{"level":30,"time":"2026-03-07T15:25:41.947Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method getElementCount"}
+{"level":30,"time":"2026-03-07T15:25:41.947Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is disabled, return Locator: css=[data-test=\"add-to-cart-sauce-labs-backpack\"] in page."}
+{"level":30,"time":"2026-03-07T15:25:41.950Z","pid":884950,"hostname":"linuxshop","msg":"End of node method getElementCount"}
+{"level":30,"time":"2026-03-07T15:25:41.955Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-03-07T15:25:41.963Z","pid":884950,"hostname":"linuxshop","msg":"Removed page=533a536e-465d-4d9d-92c6-47b17d247b54 from context=253583f5-ee6f-4a16-88c5-0e146b022297 page stack"}
+{"level":30,"time":"2026-03-07T15:25:42.114Z","pid":884950,"hostname":"linuxshop","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13622:59)
+    at PlaywrightServer.setTimeout (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13873:57)
+    at Object.onReceiveHalfClose (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-03-07T15:25:42.118Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-07T15:25:42.118Z","pid":884950,"hostname":"linuxshop","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-07T15:25:42.121Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-07T15:25:42.121Z","pid":884950,"hostname":"linuxshop","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-07T15:25:42.125Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-07T15:25:42.405Z","pid":884950,"hostname":"linuxshop","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-07T15:25:42.405Z","pid":884950,"hostname":"linuxshop","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-07T15:25:42.405Z","pid":884950,"hostname":"linuxshop","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-07T15:25:42.411Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-03-07T15:25:42.411Z","pid":884950,"hostname":"linuxshop","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":30,"time":"2026-03-07T15:25:42.411Z","pid":884950,"hostname":"linuxshop","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@cc36873474977d80416428c8849e14db\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=cd1cee84-e772-475f-8139-44dc7d15904a\"}"}
+{"level":30,"time":"2026-03-07T15:25:42.411Z","pid":884950,"hostname":"linuxshop","msg":"Trace file: "}
+{"level":30,"time":"2026-03-07T15:25:42.421Z","pid":884950,"hostname":"linuxshop","msg":"Setting default timeout for context context=5c1aca62-f230-474c-b564-5eabf5d8197d to 10000"}
+{"level":30,"time":"2026-03-07T15:25:42.421Z","pid":884950,"hostname":"linuxshop","msg":"Changed active context: context=5c1aca62-f230-474c-b564-5eabf5d8197d"}
+{"level":30,"time":"2026-03-07T15:25:42.421Z","pid":884950,"hostname":"linuxshop","msg":"End of node method newContext"}
+{"level":30,"time":"2026-03-07T15:25:42.426Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-07T15:25:42.426Z","pid":884950,"hostname":"linuxshop","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@cc36873474977d80416428c8849e14db\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=5c1aca62-f230-474c-b564-5eabf5d8197d\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@069444629285e701b0378df1c7db190c\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"id\":\"browser=cd1cee84-e772-475f-8139-44dc7d15904a\"}"}
+{"level":30,"time":"2026-03-07T15:25:42.600Z","pid":884950,"hostname":"linuxshop","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-07T15:25:42.600Z","pid":884950,"hostname":"linuxshop","msg":"Changed active page"}
+{"level":30,"time":"2026-03-07T15:25:43.026Z","pid":884950,"hostname":"linuxshop","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-07T15:25:43.032Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-07T15:25:43.032Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is enabled, find Locator with id=user-name in page."}
+{"level":30,"time":"2026-03-07T15:25:43.073Z","pid":884950,"hostname":"linuxshop","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-07T15:25:43.076Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-07T15:25:43.077Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2026-03-07T15:25:43.087Z","pid":884950,"hostname":"linuxshop","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-07T15:25:43.091Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-07T15:25:43.091Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is enabled, find Locator with id=login-button in page."}
+{"level":30,"time":"2026-03-07T15:25:43.354Z","pid":884950,"hostname":"linuxshop","msg":"End of node method click"}
+{"level":30,"time":"2026-03-07T15:25:43.359Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-07T15:25:43.360Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is enabled, find Locator with css=[data-test=\"error\"] in page."}
+{"level":30,"time":"2026-03-07T15:25:43.366Z","pid":884950,"hostname":"linuxshop","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-07T15:25:43.369Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method getElementCount"}
+{"level":30,"time":"2026-03-07T15:25:43.369Z","pid":884950,"hostname":"linuxshop","msg":"Strict mode is disabled, return Locator: css=[data-test=\"shopping-cart-link\"] in page."}
+{"level":30,"time":"2026-03-07T15:25:43.372Z","pid":884950,"hostname":"linuxshop","msg":"End of node method getElementCount"}
+{"level":30,"time":"2026-03-07T15:25:43.376Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-03-07T15:25:43.383Z","pid":884950,"hostname":"linuxshop","msg":"Removed page=6243bd97-10b3-409f-9626-4942175f6b2f from context=5c1aca62-f230-474c-b564-5eabf5d8197d page stack"}
+{"level":30,"time":"2026-03-07T15:25:43.546Z","pid":884950,"hostname":"linuxshop","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13622:59)
+    at PlaywrightServer.setTimeout (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13873:57)
+    at Object.onReceiveHalfClose (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-03-07T15:25:43.551Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-07T15:25:43.551Z","pid":884950,"hostname":"linuxshop","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13622:59)
+    at PlaywrightServer.setTimeout (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13873:57)
+    at Object.onReceiveHalfClose (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (/home/administrateur/PhpstormProjects/swag_labs/venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-03-07T15:25:43.555Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-07T15:25:43.555Z","pid":884950,"hostname":"linuxshop","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-07T15:25:43.572Z","pid":884950,"hostname":"linuxshop","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-03-07T15:25:43.573Z","pid":884950,"hostname":"linuxshop","msg":"End of node method closeAllBrowsers"}

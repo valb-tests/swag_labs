@@ -7,7 +7,7 @@ ${WRONGUSERNAME}    wrong_username
 ${WRONGPASSWORD}    wrong_password
 
 *** Test Cases ***
-Login standard user successfully
+Login identifiants valides
     [Tags]  SWAG-25
     Log     Execution SWAG-25 Login identifiants valides
     Open Login Page
@@ -20,7 +20,7 @@ Login standard user successfully
 
     Close Browser
 
-Login standard user wrong username
+Login nom d'utilisateur invalide
     [Tags]  SWAG-26
     Log     Execution SWAG-26 Login nom d'utilisateur invalide
     Open Login Page
@@ -39,7 +39,7 @@ Login standard user wrong username
 
     Close Browser
 
-Login standard user wrong password
+Login mot de passe invalide
     [Tags]  SWAG-30
     Log     Exécution SWAG-30 Login mot de passe invalide
     Open Login Page

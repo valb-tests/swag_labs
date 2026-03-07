@@ -2,17 +2,18 @@
 
 Ce projet contient une suite de tests automatisés développés avec Robot Framework pour tester l’application web SauceDemo.
 
-## Application testée
+## 💻 Application testée
 https://www.saucedemo.com/
 
-## Environnement technique
+## 🌐 Environnement technique
 
 - Robot Framework
 - Playwright (via Browser Library)
-- GitHub Actions
 - Jira & Xray pour la gestion et le reporting des tests
+- GitHub Actions
+- GitHub Pages
 
-## Objectifs du projet
+## 🎯 Objectifs du projet
 
 - Automatiser les scénarios :
   - Login et logout utilisateur
@@ -20,9 +21,9 @@ https://www.saucedemo.com/
   - Saisie des informations clients
   - Validation de commande
 
----
+- Intégrer les résultats des tests dans Xray
 
-## Installation
+## ⚙️ Installation
 
 ### Cloner le projet
 
@@ -34,5 +35,5 @@ cd swag_labs
 ### Lancer les tests
 ```bash
 cd swag_labs
-robot .
+robot tests/
 ```

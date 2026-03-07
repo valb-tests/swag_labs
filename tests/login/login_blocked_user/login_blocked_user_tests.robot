@@ -7,7 +7,7 @@ ${USERNAME}      locked_out_user
 ${PASSWORD}      secret_sauce
 
 *** Test Cases ***
-Login blocked user
+Login compte bloqué
     [Tags]  SWAG-27
     Log     Exécution SWAG-27 Login compte bloqué
     Open Login Page
