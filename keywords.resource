@@ -6,6 +6,6 @@ ${PASSWORD}      secret_sauce
 
 *** Keywords ***
 Open Login Page
-    New Browser    chromium    headless=False
+    New Browser    chromium    headless=True
     New Context
     New Page    ${URL}
