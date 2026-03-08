@@ -7,21 +7,26 @@ https://www.saucedemo.com/
 
 ## 🌐 Environnement technique
 
-- Robot Framework
-- Playwright (via Browser Library)
-- Jira & Xray pour la gestion et le reporting des tests
-- GitHub Actions
-- GitHub Pages
+- **Framework de tests automatisés** : Robot Framework
+- **Automatisation navigateur** : Playwright (via Browser Library)
+- **Gestion et reporting des tests** : Jira & Xray
+- **CI/CD** : GitHub Actions
+- **Publication rapports** : GitHub Pages
 
 ## 🎯 Objectifs du projet
 
 - Automatiser les scénarios :
   - Login et logout utilisateur
-  - Ajout et suppression du panier
-  - Saisie des informations clients
+  - Gestion du panier
   - Validation de commande
 
-- Intégrer les résultats des tests dans Xray
+- Intégrer les résultats des tests dans :
+  - Xray
+  - Github pages
+
+## 📊 Résultats des tests
+- [Résumé des tests](https://valb-tests.github.io/swag_labs/report.html)  
+- [Logs détaillés](https://valb-tests.github.io/swag_labs/log.html)
 
 ## ⚙️ Installation
 
