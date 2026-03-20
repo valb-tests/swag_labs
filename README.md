@@ -17,8 +17,6 @@ https://www.saucedemo.com/
 
 - Automatiser les scénarios :
   - Login et logout utilisateur
-  - Gestion du panier
-  - Validation de commande
 
 - Intégrer les résultats des tests dans :
   - Xray
